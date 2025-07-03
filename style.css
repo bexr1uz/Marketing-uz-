@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +24,7 @@
   list-style: none;
   display: flex;
   gap: 15px;
+  position: relative;
 }
 .navbar a {
   color: white;
@@ -35,6 +35,43 @@
 .navbar a:hover {
   background-color: #005f73;
 }
+
+/* Dropdown menyu asosiy ul yashirilsin */
+.left-menu li.dropdown ul.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #003049;
+  margin-top: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 160px;
+  z-index: 1001;
+  list-style: none;
+}
+
+/* Dropdown menyularni vertikal qilib joylash */
+.left-menu li.dropdown ul.dropdown-menu li {
+  padding: 8px 20px;
+}
+
+/* Hover qilganda dropdown menyuni ko‘rsatish */
+.left-menu li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+
+/* Dropdown ichidagi linklar */
+.left-menu li.dropdown ul.dropdown-menu li a {
+  color: white;
+  display: block;
+  text-decoration: none;
+}
+
+/* Dropdown link hover effekti */
+.left-menu li.dropdown ul.dropdown-menu li a:hover {
+  background-color: #005f73;
+  color: #ffcc00;
+}
+
 .categories {
   display: flex;
   justify-content: center;
@@ -101,7 +138,7 @@
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
+  background-color: #d1cbcb;
 }
 .navbar {
   position: fixed;
@@ -165,11 +202,23 @@ body {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
-  width: 21%;
-  height: auto;
   font-size: 20px;
+  float: left;
+  margin: 100px;
+  border-radius: 25px ;
+  background-color: aliceblue;
+  height: 420px;
+  width: 170px;
 }
 img{
-  width: 50%;
+  width: 70%;
   height: auto;
+  padding-top: -90px;
+}
+button{
+  border-radius: 25px;
+  background-color: #ffcc00;
+}
+button:hover{
+   background-color: beige;
 }
