@@ -35,8 +35,6 @@
 .navbar a:hover {
   background-color: #005f73;
 }
-
-/* Dropdown menyu asosiy ul yashirilsin */
 .left-menu li.dropdown ul.dropdown-menu {
   display: none;
   position: absolute;
@@ -48,30 +46,21 @@
   z-index: 1001;
   list-style: none;
 }
-
-/* Dropdown menyularni vertikal qilib joylash */
 .left-menu li.dropdown ul.dropdown-menu li {
   padding: 8px 20px;
 }
-
-/* Hover qilganda dropdown menyuni ko‘rsatish */
 .left-menu li.dropdown:hover > ul.dropdown-menu {
   display: block;
 }
-
-/* Dropdown ichidagi linklar */
 .left-menu li.dropdown ul.dropdown-menu li a {
   color: white;
   display: block;
   text-decoration: none;
 }
-
-/* Dropdown link hover effekti */
 .left-menu li.dropdown ul.dropdown-menu li a:hover {
   background-color: #005f73;
   color: #ffcc00;
 }
-
 .categories {
   display: flex;
   justify-content: center;
