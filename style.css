@@ -187,27 +187,41 @@ body {
 .m{
   padding-top: 100px;
 }
-.card{
-  padding-top: 100px;
-  padding-bottom: 100px;
-  text-align: center;
-  font-size: 20px;
-  float: left;
-  margin: 100px;
-  border-radius: 25px ;
-  background-color: aliceblue;
-  height: 420px;
-  width: 170px;
-}
 img{
-  width: 70%;
-  height: auto;
-  padding-top: -90px;
+  width: 350px;
+  height: 300px;
+  border-radius: 14px;
+}
+.card{
+  padding-bottom: 190px;
+  border-radius: 15px;
+  background-color: aliceblue;
+  width: 200px;
+  height: 380px;
+  margin-top: 100px;
+  margin-left: 400px;
+  text-align: center;
+  margin-bottom: 50px;
+  display: inline-block;
+}
+.card:hover{
+  box-shadow: 1px 0 0 3px #77756c;
 }
 button{
-  border-radius: 25px;
+  width: 100px;
+  height: 35px;
   background-color: #ffcc00;
+  font-size: 10px;
+  border-radius: 10px;
 }
 button:hover{
-   background-color: beige;
+  font-size: 15px;
+  background-color: green;
+  color: black;
+}
+.matn{
+  margin: 10px;
+}
+p{
+  margin: 15px;
 }
