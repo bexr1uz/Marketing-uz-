@@ -187,41 +187,116 @@ body {
 .m{
   padding-top: 100px;
 }
-img{
-  width: 350px;
-  height: 300px;
-  border-radius: 14px;
-}
 .card{
-  padding-bottom: 190px;
-  border-radius: 15px;
-  background-color: aliceblue;
-  width: 200px;
-  height: 380px;
-  margin-top: 100px;
-  margin-left: 400px;
+  padding-top: 100px;
+  padding-bottom: 100px;
   text-align: center;
-  margin-bottom: 50px;
-  display: inline-block;
+  font-size: 20px;
+  float: left;
+  margin: 100px;
+  border-radius: 25px ;
+  background-color: aliceblue;
+  height: 420px;
+  width: 170px;
 }
-.card:hover{
-  box-shadow: 1px 0 0 3px #77756c;
+img{
+  width: 70%;
+  height: auto;
+  padding-top: -90px;
 }
-button{
-  width: 100px;
-  height: 35px;
-  background-color: #ffcc00;
-  font-size: 10px;
-  border-radius: 10px;
-}
-button:hover{
-  font-size: 15px;
-  background-color: green;
-  color: black;
-}
-.matn{
-  margin: 10px;
-}
-p{
-  margin: 15px;
-}
+
+ .olim {
+      max-width: 300px;
+      margin: 60px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .olim h2 {
+      text-align: center;
+    }
+
+    .olim label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    .olim input[type="text"],
+    .olim input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+    }
+
+    .olim1 {
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .olim1 input[type="checkbox"] {
+      display: none;
+    }
+
+    .olim2 {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #3498db;
+      color: white;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+      font-size: 16px;
+      position: relative;
+      width: 100%;
+    }
+
+    .olim2::after {
+      content: "Kirish";
+    }
+
+    .olim1 input[type="checkbox"]:checked + .olim2 {
+      width: 50px;
+      height: 50px;
+      padding: 0;
+      border-radius: 50%;
+      background-color: #2ecc71;
+      font-size: 0;
+      animation: spin 0.6s ease-in-out;
+      pointer-events: none;
+    }
+
+    .olim1 input[type="checkbox"]:checked + .olim2::after {
+      content: "✓";
+      font-size: 24px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ddd;
+      margin-top: 40px;
+    }
+
+    .forgot {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    .forgot a {
+      font-size: 14px;
+      color: #3498db;
+      text-decoration: none;
+    }
+    
